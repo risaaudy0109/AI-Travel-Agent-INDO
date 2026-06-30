@@ -26,7 +26,7 @@ from langchain_community.vectorstores import FAISS                      # Vector
 from langchain_groq import ChatGroq                                     # Connect to Groq API
 from langchain.chains import RetrievalQA                                # Orchestrator
 from langchain.prompts import PromptTemplate                            # Read and format system_prompt.txt
-
+import streamlit as st
 load_dotenv()
 
 # ── Configuration ──────────────────────────────────────────────────────
