@@ -14,7 +14,7 @@
 #   6. GENERATE → LLM crafts an answer from the retrieved pieces
 #
 # ============================================================
-from pathlib import Path
+
 import os
 from dotenv import load_dotenv          # Read .env file to get API keys
 from langchain_community.document_loaders import TextLoader             # Convert knowledge documents into LangChain-friendly format
@@ -31,11 +31,12 @@ load_dotenv()
 
 # ── Configuration ──────────────────────────────────────────────────────
 
-# Location of the product catalog file
-DATA_PATH = "data/trip_catalog.txt"
+from pathlib import Path
 
-# Location of the system prompt file
-SYSTEM_PROMPT_PATH = Path(__file__).parent / "system_prompt.txt"
+BASE_DIR = Path(__file__).resolve().parent
+
+DATA_PATH = BASE_DIR / "data" / "trip_catalog.txt"
+SYSTEM_PROMPT_PATH = BASE_DIR / "system_prompt.txt"
 
 # Embedding model: turns text into number vectors
 # Using a multilingual model so it understands Indonesian
