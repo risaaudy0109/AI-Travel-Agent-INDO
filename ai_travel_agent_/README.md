@@ -12,7 +12,7 @@ An AI-powered chatbot that helps customers pick the right trip package without w
 
 ## 🚀 Live Demo
 
-Not deployed yet — run it locally for now (see (https://ai-travel-agent-indo-na.streamlit.app/) below).
+Not deployed yet — run it locally for now see https://ai-travel-agent-indo-na.streamlit.app/
 
 ---
 
